@@ -1,7 +1,7 @@
 const express = require("express");
 const { MongoClient } = require("mongodb");
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5050;
 const url =
   "mongodb+srv://admin:admin@projectuas.hn7e9pg.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(url);
@@ -18,6 +18,8 @@ app.get("/", async (req, res) => {
   res.status(200).json({ dataWeb });
   console.log(dataWeb);
 });
+
+app.use("/", dataWeb);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
