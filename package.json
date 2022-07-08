@@ -1,6 +1,9 @@
 {
   "name": "backenddin",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.13.1"
+  },
   "description": "��E\u0000d\u0000i\u0000t\u0000 \u0000m\u0000e\u0000 \u0000l\u0000a\u0000t\u0000e\u0000r\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
